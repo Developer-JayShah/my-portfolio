@@ -8,9 +8,11 @@
         --light: #f2f2f2;
         --secondary: #070606;
 }
-html{
+
+html {
         scroll-behavior: smooth;
 }
+
 * {
         margin: 0;
         padding: 0;
@@ -112,11 +114,13 @@ section {
         margin-bottom: 2rem;
         text-align: justify;
 }
-.icon4{
+
+.icon4 {
         font-size: 28px;
         padding-top: 20px;
-     
-    }
+
+}
+
 /* .social a {
 
         margin-right: 0.6rem;
@@ -264,27 +268,71 @@ section {
         text-align: center;
 }
 
-.card-wrapper {
-        padding-top: 20px;
+#container {
+        height: 100vh;
         width: 100%;
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        box-sizing: border-box;
+}
 
+#container .hover {
+        width: 500px;
+        height: 300px;
+        box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        position: relative;
+        transition: .3s;
+        margin: 10px;
+}
+
+#container img {
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
 }
 
-.card-wrapper img {
-        width: 100%;
-
-        padding: 10px;
-
+#container i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-1500px, -50%);
+        z-index: 10;
+        color: #fff;
+        transition: .8s;
+        transition-timing-function: linear;
 }
 
-.card-wrapper .p2 {}
+#container .hover::after {
+        content: '';
+        width: 800px;
+        height: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-140%, -50%);
+        z-index: 1;
+        background: rgba(24, 220, 255, 0.8);
+        transition: 0.8s;
+        border-radius: 50%;
+}
 
-.portfolio {
-        width: 100%;
-        height: 600px;
-        background-color: rgba(0, 0, 0, 0.075);
+#container .hover:hover::after {
+        transform: translate(-50%, -50%);
+}
+
+#container .hover:hover img {
+        transform: translate(-50%, -50%) scale(1.4);
+}
+
+#container .hover:hover i {
+        transform: translate(-50%, -50%);
+        transition-timing-function: ease;
 }
 
 .contact-sec {
