@@ -338,14 +338,17 @@ section {
 .contact-sec {
         width: 100%;
         height: 850px;
+        background-color: rgba(0, 0, 0, 0.075);
+        color: #fff;
         /* background: url(./images/autumn.jpg); */
-        background: url('https://source.unsplash.com/user/erondu/1600x900');
+        /* background: url('https://source.unsplash.com/user/jackie/likes/1600x900'); */
 }
 
 .contact h2 {
         text-align: center;
         font-size: 40px;
         font-weight: 500;
+        color: black;
 
 }
 
