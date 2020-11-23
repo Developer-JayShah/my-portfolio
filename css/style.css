@@ -335,16 +335,102 @@ section {
         transition-timing-function: ease;
 }
 
-.contact-sec {
+/* .contact-sec {
         width: 100%;
         height: 850px;
         background-color: rgba(0, 0, 0, 0.075);
         color: #fff;
+        background: url(./images/autumn.jpg);
+        background: url('https://source.unsplash.com/user/jackie/likes/1600x900');
+} */
+.contact-sec {
+        width: 100%;
+        height: 1200px;
+        background-color: rgba(0, 0, 0, 0.075);
+        color: #fff;
         /* background: url(./images/autumn.jpg); */
         /* background: url('https://source.unsplash.com/user/jackie/likes/1600x900'); */
-}
+    }
+    
+    .contact h2 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        color: black;
+    
+    }
+    
+    .contact h2 span {
+        color: var(--primary);
+    }
+    
+    
+    
+    .contact {
+        text-align: center;
+        padding-top: 50px;
+    
+    }
+    
+    .Contact-box {
+        width: 900px;
+        height: 580px;
+    
+        box-shadow: 0 0 20px 0 #999;
+    
+        margin: 30px;
+        display: inline-block;
+    
+    }
+    .Contact-box .map{
+        text-align: left;
+        margin-left: 18px;
+        margin-top: 15px;
+    }
+    form {
+        margin: 5px;
+    }
+    .textbox {
+    
+        width: 400px;
+        height: 40px;
+        margin-top: 30px;
+        position: relative;
+        top: -450px;
+        margin-left: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        border: 1px solid #777;
+        border-radius: 14px;
+        outline: none;
+    
+    
+    }
+    .button5{
+        padding: 0.8rem 3rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border: 2px solid transparent;
+        outline: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: all .3s ease;
+        background: var(--primary);
+        color: var(--secondary);
+    }
+    .button5:hover {
+        background: transparent;
+        border-color: var(--primary);
+        color: var(--primary);
+    
+    }
+    .message {
+        height: 150px;
+        padding-top: 10px;
+    }
 
-.contact h2 {
+/* .contact h2 {
         text-align: center;
         font-size: 40px;
         font-weight: 500;
@@ -396,9 +482,7 @@ form {
 .message {
         height: 150px;
         padding-top: 10px;
-}
-
-
+} */
 
 footer {
         text-align: center;
